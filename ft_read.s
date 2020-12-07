@@ -7,6 +7,10 @@ ft_read:    mov     rax, 0
 			jl		error
 			ret
 
-error:      call    __errno_location WRT ..plt
+error:      neg		rax
+			push	rax
+			pop		r8
+			call    __errno_location WRT ..plt
+			mov		[rax], r8
 			mov     rax, -1
 			ret

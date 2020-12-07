@@ -26,28 +26,28 @@ int			main(void)
 
 	c = NULL;
 
-	printf("String:\t  [%s]\n", str);
+	// printf("String:\t  [%s]\n", str);
 
-	printf("ft_strlen:[%li]\n", ft_strlen(str));
-	printf("ft_strlen:[%li]\n\n", strlen(str));
+	// printf("ft_strlen:[%li]\n", ft_strlen(str));
+	// printf("ft_strlen:[%li]\n\n", strlen(str));
 
-	printf("ft_strcpy:[%s]\n", ft_strcpy(a, str));
-	printf("\ta:[%s]\n\n",a);
+	// printf("ft_strcpy:[%s]\n", ft_strcpy(a, str));
+	// printf("\ta:[%s]\n\n",a);
 
-	printf("ft_strcmp:[%d]\n", ft_strcmp(str2, str3));
-	printf("strcmp:[%d]\n\n", strcmp(str2, str3));
-
+	// printf("ft_strcmp:[%d]\n", ft_strcmp(str2, str3));
+	// printf("strcmp:[%d]\n\n", strcmp(str2, str3));
+	close(42);
 	printf("|[%li]****\n", ft_write(42, "bonjouro", 8));
 	printf("|[%li]****\n", write(42, "bonjouro", 8));
 	printf("| ft_write\n\n|");
 
-	size = 11;
-	printf("|ft_read[%li]\n", ft_read(1, b, size));
-	write(1, b, size);
+	// size = 11;
+	// printf("|ft_read[%li]\n", ft_read(1, b, size));
+	// write(1, b, size);
 
-	c = ft_strdup(str4);
-	printf("\nstr:[%s]\n", c);
-	printf("ft_strdup:[%s]\n", c);
-	free(c);
+	// c = ft_strdup(str4);
+	// printf("\nstr:[%s]\n", c);
+	// printf("ft_strdup:[%s]\n", c);
+	// free(c);
 	return (0);
 }
